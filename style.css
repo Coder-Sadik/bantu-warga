@@ -1,0 +1,154 @@
+/* colors */
+:root {
+	--blue: #5669ff;
+	--gray: #656161;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	background-color: rgb(255, 255, 255);
+	min-height: 100vh;
+}
+.header {
+	width: 100%;
+	height: 92px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 21px 80px 0 #7a75751f;
+}
+
+.header img {
+	width: 100px;
+}
+.nav {
+	margin-right: 400px;
+}
+.nav a {
+	text-decoration: none;
+	padding: 20px 20px;
+	font-size: 16px;
+	color: var(--gray);
+}
+.nav a:hover {
+	color: var(--blue);
+}
+
+.btn-purple {
+	background-color: var(--blue);
+	border: none;
+	color: white;
+	padding: 13px 28px;
+	font-weight: 600;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: 0.3s ease;
+}
+.btn-purple:hover {
+	background-color: rgb(54, 86, 226);
+}
+
+h1 {
+	font-size: 52px;
+}
+.highlight {
+	color: var(--blue);
+}
+.hero-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 120px;
+}
+.texts {
+	position: relative;
+	max-width: 590px;
+}
+/* for wave icon  */
+.texts img {
+	width: 60px;
+	position: absolute;
+	top: 8px;
+	right: 220px;
+}
+
+.hero-images {
+	display: flex;
+	position: relative;
+}
+.hero-img1 {
+	height: 565px;
+	position: absolute;
+	right: 180px;
+}
+.hero-img2 {
+	height: 720px;
+}
+
+/* services section  */
+.services {
+	margin: 64px 120px;
+	text-align: center;
+}
+.services-header {
+	max-width: 40%;
+	margin: auto;
+	margin-bottom: 64px;
+}
+.service-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	margin-bottom: 32px;
+}
+.service-card {
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	box-shadow: 0px 21px 80px 0 #7a75751f;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 50px 40px;
+}
+/* app section  */
+.app-section {
+	display: flex;
+	justify-content: space-around;
+	margin: 64px 120px;
+}
+.app-context {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+.app-context p {
+	width: 500px;
+}
+.download-links {
+	display: flex;
+	gap: 32px;
+}
+.download-links img {
+	cursor: pointer;
+}
+
+.purple-link {
+	text-decoration: none;
+	color: var(--blue);
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+.purple-link::before {
+	content: "";
+	display: block;
+	background-color: var(--blue);
+	width: 3px;
+	height: 16px;
+	margin-right: 20px;
+}
