@@ -152,3 +152,62 @@ h1 {
 	height: 16px;
 	margin-right: 20px;
 }
+.info-section {
+	display: flex;
+	margin: 0px 120px;
+	align-items: center;
+}
+.info-section p {
+	max-width: 535px;
+}
+
+.info-item img {
+	grid-area: item1;
+}
+.info-item h2 {
+	grid-area: item2;
+}
+.info-item p {
+	grid-area: item3;
+}
+
+.info-item {
+	display: grid;
+	column-gap: 32px;
+	row-gap: 16px;
+	grid-template-columns: 40px auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"item1 item2"
+		".     item3";
+}
+
+.info-item {
+	padding: 40px 0px;
+}
+p {
+	color: #4a4545;
+}
+
+.info-bannar {
+	display: flex;
+	align-items: center;
+	width: 660px;
+	height: 560px;
+	position: relative;
+	/* border: 1px solid tomato; */
+}
+.info-bannar img.img-1 {
+	position: absolute;
+	height: 556px;
+	width: 320px;
+	z-index: 2;
+	right: 170px;
+	bottom: 0px;
+}
+.info-bannar img.img-2 {
+	height: 460px;
+	position: absolute;
+	right: 0px;
+	top: 120px;
+}
