@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
 /* colors */
 :root {
 	--blue: #5669ff;
@@ -70,7 +72,7 @@ h1 {
 	width: 60px;
 	position: absolute;
 	top: 8px;
-	right: 220px;
+	right: 180px;
 }
 
 .hero-images {
@@ -120,6 +122,27 @@ h1 {
 	justify-content: space-around;
 	margin: 64px 120px;
 }
+.main-circle {
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -2;
+}
+.circle {
+	background-color: var(--blue);
+	border-radius: inherit;
+	height: 60%;
+	position: absolute;
+	width: 507px;
+	height: 456px;
+	bottom: 0;
+	z-index: -1;
+}
+
 .app-context {
 	display: flex;
 	flex-direction: column;
@@ -224,6 +247,7 @@ p {
 	position: absolute;
 	left: 45%;
 	top: 50px;
+	z-index: 10;
 }
 .contact-section .container {
 	position: relative;
@@ -237,8 +261,8 @@ p {
 	background-color: #fff;
 }
 
-.container .text {
-	max-width: 300px;
+.contact-info {
+	max-width: 350px;
 }
 
 form {
@@ -256,6 +280,7 @@ fieldset {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 10px;
 }
 fieldset input {
 	border: none;
@@ -266,6 +291,10 @@ fieldset input {
 
 form fieldset:first-child {
 	height: 85px;
+}
+
+form .message {
+	height: 150px;
 }
 
 .info :first-child {
@@ -293,4 +322,38 @@ form fieldset:first-child {
 }
 .corner {
 	bottom: -64px;
+}
+
+.footer {
+	background-color: var(--blue);
+	display: flex;
+	justify-content: space-between;
+	margin-top: 120px;
+	padding: 64px 120px;
+	color: white;
+	position: relative;
+}
+.footer p {
+	color: white;
+	max-width: 400px;
+}
+.footer-left img {
+	width: 136px;
+}
+
+.footer-left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer-right {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom-item {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
 }
